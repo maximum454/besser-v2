@@ -10,6 +10,7 @@ $(function () {
     var sliderMain = $('.js-slider-main').slick({
         dots: false,
         infinite: true,
+        arrows:false,
         speed: 300,
         slidesToShow: 1,
         adaptiveHeight: false

@@ -22,6 +22,19 @@ body{
 	margin: 0 auto;
 	padding: 0 20px;
 }
+.row{
+	display: flex;
+	flex-wrap: wrap;
+}
+.navbar{
+	background-color: #ECECEC;
+	padding: 10px;
+}
+.page{
+	background-color: #ffffff;
+	padding: 20px;
+	margin: 20px auto;
+}
 
 .btn{
 	width: fit-content;
@@ -75,3 +88,9 @@ body{
 
 //Сео текст
 @import "componets/seo-text";
+
+//Хлебные крошки
+@import "componets/breadcrumbs";
+
+//Страница каталог
+@import "componets/catalog-list";
