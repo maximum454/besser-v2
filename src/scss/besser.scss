@@ -14,10 +14,25 @@ body{
 		overflow: hidden;
 	}
 }
+.wrp{
+	background-image: url("../img/body-bg.jpg");
+}
 .container{
 	max-width: 1200px;
 	margin: 0 auto;
 	padding: 0 20px;
+}
+
+.btn{
+	width: fit-content;
+	display: block;
+	text-decoration: none;
+	border: 0;
+	border-radius: 5px;
+	padding: 10px 20px;
+	background-color: #9BD147;
+	font-size: 28px;
+	color: #ffffff;
 }
 
 
@@ -39,3 +54,6 @@ body{
 
 //Подвал
 @import "componets/footer";
+
+//слайдер на главной
+@import "componets/slider-main";
