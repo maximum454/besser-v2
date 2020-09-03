@@ -1,0 +1,41 @@
+@import 'partials/normalize';
+@import 'mixin';
+@import 'partials/slick';
+
+
+*{
+	box-sizing: border-box;
+}
+body{
+	background-color: #fff;
+	font-family: 'Roboto', sans-serif;
+	color: #424242;
+	&.lock{
+		overflow: hidden;
+	}
+}
+.container{
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 0 20px;
+}
+
+
+
+//Шапка
+@import "componets/header";
+
+//Главная навигация
+@import "componets/nav";
+
+//Дополнительная навигация
+@import "componets/nav-second";
+
+//Поиск в шапке
+@import "componets/search-header";
+
+//Рассылка
+@import "componets/subscribe";
+
+//Подвал
+@import "componets/footer";
