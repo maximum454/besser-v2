@@ -33,6 +33,15 @@ body{
 	background-color: #9BD147;
 	font-size: 28px;
 	color: #ffffff;
+	&.second{
+		background-color: transparent;
+		border: 1px solid #9BD147;
+		border-radius: 5px;
+		color: #9BD147;
+		font-size: 14px;
+		font-weight: bold;
+		text-align: center;
+	}
 }
 
 
@@ -57,3 +66,12 @@ body{
 
 //слайдер на главной
 @import "componets/slider-main";
+
+//Карточки товара
+@import "componets/card";
+
+//Слайдер партнеров
+@import "componets/slider-partners";
+
+//Сео текст
+@import "componets/seo-text";

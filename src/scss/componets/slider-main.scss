@@ -1,5 +1,9 @@
 .slider-main{
 	margin: 20px 0;
+	&__slider{
+		width: calc(100% + 40px);
+		margin-left: -20px;
+	}
 	&__item{
 		position: relative;
 		img{
@@ -28,6 +32,7 @@
 		font-weight: bold;
 		text-transform: uppercase;
 		text-shadow: 0 4px 8px rgba(#000,.9);
+		position: relative;
 	}
 	&__name{
 		font-size: 52px;
@@ -35,11 +40,13 @@
 		font-weight: bold;
 		text-transform: uppercase;
 		text-shadow: 0 4px 8px rgba(#000,.9);
+		position: relative;
 	}
 	&__price{
 		font-size: 32px;
 		color: #ffffff;
 		text-shadow: 0 4px 8px rgba(#000,.9);
 		margin-bottom: 100px;
+		position: relative;
 	}
 }
