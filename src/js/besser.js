@@ -5,6 +5,7 @@
 @@include('./partials/TimelineMax.min.js')
 @@include('./partials/EasePack.min.js')
 @@include('./partials/CSSPlugin.min.js')
+@@include('./partials/remodal.js')
 
 $(function () {
     var sliderMain = $('.js-slider-main').slick({

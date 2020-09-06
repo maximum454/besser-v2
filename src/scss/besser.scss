@@ -1,6 +1,8 @@
 @import 'partials/normalize';
 @import 'mixin';
 @import 'partials/slick';
+@import 'partials/remodal';
+@import 'partials/remodal-default-theme';
 
 
 *{
@@ -55,8 +57,39 @@ body{
 		font-weight: bold;
 		text-align: center;
 	}
+
+}
+.w100{
+	width: 100%;
 }
 
+.remodal{
+	background-image: url("../img/body-bg.jpg");
+	@media only screen and (min-width: 641px) {
+		max-width: 540px;
+	}
+	.remodal-close{
+		top: 10px;
+		right: 10px;
+		left: auto;
+		&:before {
+			content: '';
+			font-family: inherit;
+			position: absolute;
+			top: 0;
+			left: 0;
+			display: block;
+			width: 35px;
+			height: 35px;
+			text-align: center;
+			background-image: url("../img/mdi_close.svg");
+			background-size: 100%;
+		}
+	}
+	&__title{
+		color: #fff;
+	}
+}
 
 
 //Шапка
@@ -108,4 +141,4 @@ body{
 @import "componets/contacts";
 
 //Форма связи
-@import "componets/contacts";
+@import "componets/feedback";
