@@ -1,13 +1,18 @@
 @@include('partials/jquery.min.js')
 @@include('partials/webp.js')
+@@include('partials/burger.js')
 @@include('partials/slick.js')
 @@include('./partials/TweenLite.min.js')
 @@include('./partials/TimelineMax.min.js')
 @@include('./partials/EasePack.min.js')
 @@include('./partials/CSSPlugin.min.js')
 @@include('./partials/remodal.js')
+@@include('./partials/likely.js')
+@@include('./partials/tabs.js')
 
 $(function () {
+    $tabs('.tabs');
+
     var sliderMain = $('.js-slider-main').slick({
         dots: false,
         infinite: true,
@@ -36,5 +41,42 @@ $(function () {
         speed: 300,
         slidesToShow: 4,
         adaptiveHeight: false
+    });
+
+    $('.slider-for-product').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: false,
+        fade: true,
+        asNavFor: '.slider-nav-product'
+    });
+    $('.slider-nav-product').slick({
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        asNavFor: '.slider-for-product',
+        dots: true,
+        centerMode: false,
+        focusOnSelect: true
+    });
+
+    $('.minus').click(function () {
+        var $input = $(this).parent().find('input');
+        var count = parseInt($input.val()) - 1;
+        var price = $input.data('price');
+        count = count < 1 ? 1 : count;
+        var itog = price * count;
+        $input.val(count);
+        $input.change();
+        $('#price').html(itog);
+        return false;
+    });
+    $('.plus').click(function () {
+        var $input = $(this).parent().find('input');
+        var price = $input.data('price');
+        var itog = price * (parseInt($input.val()) + 1);
+        $input.val(parseInt($input.val()) + 1);
+        $input.change();
+        $('#price').html(itog);
+        return false;
     });
 })

@@ -9,6 +9,7 @@
 	&__info{
 		flex: 1 0 0;
 		margin-right: 20px;
+		min-width: 236px;
 	}
 	&__item{
 		margin-bottom: 20px;
@@ -25,5 +26,14 @@
 	}
 	&__map{
 		flex: 2 0 0;
+		min-width: 240px;
+	}
+	@include r(539){
+		&__info{
+			flex: 1 0 0;
+			margin-right: 0;
+			margin-bottom: 20px;
+			min-width: 236px;
+		}
 	}
 }

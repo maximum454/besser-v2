@@ -3,6 +3,7 @@
 @import 'partials/slick';
 @import 'partials/remodal';
 @import 'partials/remodal-default-theme';
+@import 'partials/likely';
 
 
 *{
@@ -131,6 +132,9 @@ body{
 //Страница продукции
 @import "componets/product";
 
+//Страница детальной продукции
+@import "componets/product-detail";
+
 //Фильтр
 @import "componets/filter";
 
@@ -142,3 +146,12 @@ body{
 
 //Форма связи
 @import "componets/feedback";
+
+//колличество
+@import "componets/number-count";
+
+//поделится
+@import "componets/share";
+
+//Табы
+@import "componets/tabs";

@@ -6,6 +6,7 @@
 		z-index: 10;
 		cursor: pointer;
 		display: none;
+		margin-left: auto;
 		&:before,
 		&:after{
 			content: '';
@@ -85,7 +86,10 @@
 		padding: 0;
 		z-index: 5;
 		transition: all 300ms ease-in-out 0s;
-
+		&.active{
+			top: 0;
+			transition: all 300ms ease-in-out 0s;
+		}
 		li{
 			list-style: none;
 		}
@@ -110,7 +114,7 @@
 			}
 		}
 	}
-	@include r(920){
+	@include r(767){
 		&__burger{
 			display: block;
 		}
