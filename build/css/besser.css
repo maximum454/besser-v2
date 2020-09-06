@@ -1688,6 +1688,98 @@ body.lock {
   color: #ffffff;
 }
 
+.contacts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  color: #424242;
+}
+
+.contacts h2 {
+  font-size: 24px;
+  margin: 0 0 10px;
+}
+
+.contacts__info {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 0px;
+          flex: 1 0 0;
+}
+
+.contacts__item {
+  margin-bottom: 20px;
+}
+
+.contacts__phone {
+  color: #424242;
+  font-size: 18px;
+  text-decoration: none;
+  -webkit-transition: .3s;
+  -o-transition: .3s;
+  transition: .3s;
+}
+
+.contacts__phone:hover {
+  color: #9BD147;
+  -webkit-transition: .3s;
+  -o-transition: .3s;
+  transition: .3s;
+}
+
+.contacts__map {
+  -webkit-box-flex: 2;
+      -ms-flex: 2 0 0px;
+          flex: 2 0 0;
+}
+
+.contacts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  color: #424242;
+}
+
+.contacts h2 {
+  font-size: 24px;
+  margin: 0 0 10px;
+}
+
+.contacts__info {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 0px;
+          flex: 1 0 0;
+}
+
+.contacts__item {
+  margin-bottom: 20px;
+}
+
+.contacts__phone {
+  color: #424242;
+  font-size: 18px;
+  text-decoration: none;
+  -webkit-transition: .3s;
+  -o-transition: .3s;
+  transition: .3s;
+}
+
+.contacts__phone:hover {
+  color: #9BD147;
+  -webkit-transition: .3s;
+  -o-transition: .3s;
+  transition: .3s;
+}
+
+.contacts__map {
+  -webkit-box-flex: 2;
+      -ms-flex: 2 0 0px;
+          flex: 2 0 0;
+}
+
 @media (min-width: 767px) {
   .header__logo {
     font-size: calc(52px + 10 * (100vw / 1200));
