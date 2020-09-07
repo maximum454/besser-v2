@@ -73,19 +73,6 @@ body{
 		top: 10px;
 		right: 10px;
 		left: auto;
-		&:before {
-			content: '';
-			font-family: inherit;
-			position: absolute;
-			top: 0;
-			left: 0;
-			display: block;
-			width: 35px;
-			height: 35px;
-			text-align: center;
-			background-image: url("../img/mdi_close.svg");
-			background-size: 100%;
-		}
 	}
 	&__title{
 		color: #fff;
@@ -155,3 +142,8 @@ body{
 
 //Табы
 @import "componets/tabs";
+
+//Новости
+@import "componets/news";
+//Новости
+@import "componets/gallery";

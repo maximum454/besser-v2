@@ -20,11 +20,12 @@
 	}
 	&__img{
 		position: relative;
+		overflow: hidden;
 		@include maintain-ratio(4 3);
 		img{
 			width: 100%;
-			height: auto;
 			display: block;
+			object-fit: contain;
 		}
 	}
 	&__label{
